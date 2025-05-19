@@ -12,7 +12,7 @@ const HomePage: React.FC = () => {
       <HeroSection
         title="Discover the Beauty of Kishtwar"
         subtitle="Explore the breathtaking landscapes, delicious cuisine, comfortable stays, and unforgettable experiences"
-        backgroundImage="herokishtwar.jpg.jpg"
+        backgroundImage="/Only-Kishtwar/assets/herokishtwar.jpg"
         buttonText="Explore Now"
         buttonLink="/places"
       />
@@ -52,7 +52,7 @@ const HomePage: React.FC = () => {
               className="rounded-xl overflow-hidden shadow-lg"
             >
               <img
-                src="about.png"
+                src="/Only-Kishtwar/assets/about.png"
                 alt="Kishtwar Landscape"
                 className="w-full h-[400px] object-cover"
               />
@@ -78,7 +78,7 @@ const HomePage: React.FC = () => {
               >
                 <div className="h-48 overflow-hidden">
                   <img
-                    src="explore.jpg"
+                    src="/Only-Kishtwar/assets/explore.jpg"
                     alt="Places to Visit"
                     className="w-full h-full object-cover transition-transform duration-300 group-hover:scale-110"
                   />
@@ -102,7 +102,7 @@ const HomePage: React.FC = () => {
               >
                 <div className="h-48 overflow-hidden">
                   <img
-                    src="food.jpg"
+                    src="/Only-Kishtwar/assets/food.jpg"
                     alt="Restaurants"
                     className="w-full h-full object-cover transition-transform duration-300 group-hover:scale-110"
                   />
@@ -126,7 +126,7 @@ const HomePage: React.FC = () => {
               >
                 <div className="h-48 overflow-hidden">
                   <img
-                    src="hotel.jpg"
+                    src="/Only-Kishtwar/assets/hotel.jpg"
                     alt="Hotels"
                     className="w-full h-full object-cover transition-transform duration-300 group-hover:scale-110"
                   />
@@ -150,7 +150,7 @@ const HomePage: React.FC = () => {
               >
                 <div className="h-48 overflow-hidden">
                   <img
-                    src="rent.jpg"
+                    src="/Only-Kishtwar/assets/rent.jpg"
                     alt="Rents"
                     className="w-full h-full object-cover transition-transform duration-300 group-hover:scale-110"
                   />
