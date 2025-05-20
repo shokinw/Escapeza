@@ -8,7 +8,7 @@ export default defineConfig({
   optimizeDeps: {
     exclude: ['lucide-react'],
   },
-  base: '/kishtwar-tourism/',
+  base: '/Only-Kishtwar/',
   build: {
     outDir: 'dist',
     assetsDir: 'assets',
