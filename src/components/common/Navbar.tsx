@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import { Link, NavLink, useLocation } from 'react-router-dom';
-import { Menu, X, ShoppingCart, MapPin, Home, UtensilsCrossed, Hotel, Building, Phone } from 'lucide-react';
+import { Menu, X, ShoppingCart, MapPin, Home, UtensilsCrossed, Hotel, Phone, History } from 'lucide-react';
 import { motion } from 'framer-motion';
 import { useCart } from '../../context/CartContext';
 
@@ -12,11 +12,10 @@ const Navbar: React.FC = () => {
   
   const navLinks = [
     { to: '/', label: 'Home', icon: <Home size={18} /> },
+    { to: '/history', label: 'History', icon: <History size={18} /> },
     { to: '/restaurants', label: 'Restaurants', icon: <UtensilsCrossed size={18} /> },
     { to: '/hotels', label: 'Hotels', icon: <Hotel size={18} /> },
-    { to: '/places', label: 'Places to Visit', icon: <MapPin size={18} /> },
     { to: '/tours', label: 'Tour Packages', icon: <MapPin size={18} /> },
-    { to: '/rents', label: 'Rents', icon: <Building size={18} /> },
     { to: '/contact', label: 'Contact', icon: <Phone size={18} /> },
   ];
 

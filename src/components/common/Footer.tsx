@@ -29,14 +29,13 @@ const Footer: React.FC = () => {
 
           {/* Quick Links */}
           <div>
-            <h3 className="text-lg font-display font-bold mb-4">Quick Links</h3>
+            <h3 className="text-white font-semibold mb-4">Quick Links</h3>
             <ul className="space-y-2">
               <li><Link to="/" className="text-gray-300 hover:text-white transition-colors">Home</Link></li>
               <li><Link to="/restaurants" className="text-gray-300 hover:text-white transition-colors">Restaurants</Link></li>
               <li><Link to="/hotels" className="text-gray-300 hover:text-white transition-colors">Hotels</Link></li>
-              <li><Link to="/places" className="text-gray-300 hover:text-white transition-colors">Places to Visit</Link></li>
-              <li><Link to="/tours" className="text-gray-300 hover:text-white transition-colors">Tour Packages</Link></li>
-              <li><Link to="/rents" className="text-gray-300 hover:text-white transition-colors">Rents</Link></li>
+              <li><Link to="/tours" className="text-gray-300 hover:text-white transition-colors">Tours</Link></li>
+              <li><Link to="/contact" className="text-gray-300 hover:text-white transition-colors">Contact</Link></li>
             </ul>
           </div>
 

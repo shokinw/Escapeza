@@ -5,30 +5,30 @@ import { fileURLToPath } from 'url';
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = path.dirname(__filename);
 
-const images = [
-  'about.png',
-  'hotel.jpg',
-  'explore.jpg',
-  'rent.jpg',
-  'food.jpg',
-  'herokishtwar.jpg'
-];
-
-// Create public/assets directory if it doesn't exist
-const publicAssetsDir = path.join(__dirname, 'public', 'assets');
-if (!fs.existsSync(publicAssetsDir)) {
-  fs.mkdirSync(publicAssetsDir, { recursive: true });
+// Create assets directory if it doesn't exist
+const assetsDir = path.join(__dirname, 'public', 'assets');
+if (!fs.existsSync(assetsDir)) {
+  fs.mkdirSync(assetsDir, { recursive: true });
 }
 
-// Copy each image to public/assets
-images.forEach(image => {
-  const sourcePath = path.join(__dirname, 'src', 'assets', image);
-  const destPath = path.join(publicAssetsDir, image);
+// List of images to copy
+const images = [
+  { src: 'herokishtwar.jpg.jpg', dest: 'herokishtwar.jpg' },
+  { src: 'about.png', dest: 'about.png' },
+  { src: 'food.jpg', dest: 'food.jpg' },
+  { src: 'hotel.jpg', dest: 'hotel.jpg' },
+  { src: 'explore.jpg', dest: 'history.jpg' } // Using explore.jpg as history image
+];
+
+// Copy each image
+images.forEach(({ src, dest }) => {
+  const sourcePath = path.join(__dirname, src);
+  const destPath = path.join(assetsDir, dest);
   
   if (fs.existsSync(sourcePath)) {
     fs.copyFileSync(sourcePath, destPath);
-    console.log(`Copied ${image} to public/assets`);
+    console.log(`Copied ${src} to ${dest}`);
   } else {
-    console.warn(`Warning: ${image} not found in src/assets`);
+    console.error(`Source file ${src} not found`);
   }
 }); 

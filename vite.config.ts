@@ -8,7 +8,7 @@ export default defineConfig({
   optimizeDeps: {
     exclude: ['lucide-react'],
   },
-  base: '/Only-Kishtwar/',
+  base: '/kishtwar-tourism/',
   build: {
     outDir: 'dist',
     assetsDir: 'assets',
@@ -32,4 +32,10 @@ export default defineConfig({
     port: 3000,
     open: true,
   },
+  publicDir: 'public',
+  experimental: {
+    renderBuiltUrl(filename) {
+      return `/${filename}`;
+    }
+  }
 });
