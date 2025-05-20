@@ -1,5 +1,5 @@
 # Only Kishtwar 🌄
-A website to explore the hidden beauty of Kishtwar – from hotels and food to rental options and tourist attractions.
+A website to explore the hidden beauty of Kishtwar – from hotels and food  and tourist attractions.
 
 🔗 [Visit the site](https://shokinw.github.io/Only-Kishtwar/)
 
