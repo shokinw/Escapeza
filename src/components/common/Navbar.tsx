@@ -43,8 +43,7 @@ const Navbar: React.FC = () => {
     >
       <div className="container-custom flex items-center justify-between">
         <Link to="/" className="flex items-center">
-          <span className="text-2xl font-display font-bold text-primary-700">Kishtwar</span>
-          <span className="text-2xl font-display font-bold text-accent-500">Tourism</span>
+          <span className="text-2xl font-display font-bold text-primary-700">Escapeza</span>
         </Link>
 
         {/* Desktop Navigation */}

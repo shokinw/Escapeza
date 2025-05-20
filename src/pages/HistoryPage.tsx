@@ -29,24 +29,51 @@ const timelineItems = [
   }
 ];
 
+const famousPlaces = [
+  {
+    name: "Sinthan Top",
+    period: "Ancient to Modern",
+    description: "A strategic mountain pass at 3,748 meters, Sinthan Top has been a crucial trade route since ancient times. It connects Kishtwar with Anantnag and has witnessed the passage of numerous caravans, traders, and travelers throughout history. The pass offers panoramic views of the surrounding Himalayan ranges.",
+    image: "https://images.pexels.com/photos/691668/pexels-photo-691668.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+  },
+  {
+    name: "Chowgan Ground",
+    period: "Historical Center",
+    description: "The heart of Kishtwar town, Chowgan Ground has been a central gathering place for centuries. It has hosted numerous cultural events, royal ceremonies, and public gatherings. The ground is surrounded by ancient deodar trees, some dating back several centuries.",
+    image: "https://images.pexels.com/photos/2387873/pexels-photo-2387873.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+  },
+  {
+    name: "Warwan Valley",
+    period: "Ancient Settlement",
+    description: "One of the oldest inhabited valleys in the region, Warwan Valley has preserved its traditional way of life. The valley's history is intertwined with ancient trade routes and has been home to various communities for centuries. Its remote location has helped maintain its pristine natural beauty and cultural heritage.",
+    image: "https://images.pexels.com/photos/2387873/pexels-photo-2387873.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+  },
+  {
+    name: "Machail Mata Temple",
+    period: "Ancient Religious Site",
+    description: "The sacred Machail Mata Temple has been a significant pilgrimage site for centuries. Located in the remote Padder region, the temple's history dates back to ancient times. It attracts devotees from across the region and is known for its annual pilgrimage during the Machail Yatra.",
+    image: "https://images.pexels.com/photos/2825578/pexels-photo-2825578.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+  }
+];
+
 const HistoryPage = () => {
   return (
     <>
       <Helmet>
-        <title>History of Kishtwar - Only Kishtwar</title>
+        <title>History of Escapeza - Historical Places and Heritage</title>
         <meta 
           name="description" 
-          content="Explore the rich history and cultural heritage of Kishtwar, from its ancient origins to modern times." 
+          content="Explore the rich history and cultural heritage of Escapeza and its famous places, from ancient origins to modern times." 
         />
       </Helmet>
       
       <PageHeader
-        title="History of Kishtwar"
+        title="History of Escapeza"
         subtitle="A journey through time: From ancient settlements to modern development"
         image="https://images.pexels.com/photos/5208378/pexels-photo-5208378.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
       />
       
-      <section className="py-12 md:py-16">
+      <section className="py-16">
         <div className="container-custom">
           <div className="max-w-4xl mx-auto">
             {timelineItems.map((item, index) => (
@@ -70,7 +97,6 @@ const HistoryPage = () => {
                       {item.content}
                     </p>
                   </div>
-                  
                   <div className="md:w-1/2">
                     <motion.div
                       initial={{ scale: 0.9, opacity: 0 }}
@@ -104,55 +130,114 @@ const HistoryPage = () => {
                 )}
               </motion.div>
             ))}
-            
-            <motion.div
-              initial={{ opacity: 0, y: 20 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              viewport={{ once: true }}
-              transition={{ duration: 0.6 }}
-              className="mt-12 bg-neutral-50 p-6 rounded-lg"
-            >
-              <h2 className="text-2xl font-serif font-bold text-neutral-900 mb-4">
-                Cultural Legacy
-              </h2>
-              <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-                <div>
-                  <h3 className="text-lg font-medium text-neutral-800 mb-2">Festivals & Traditions</h3>
-                  <ul className="space-y-2">
-                    <li className="flex items-start">
-                      <span className="text-primary-600 mr-2">•</span>
-                      <span className="text-neutral-700">Annual Chowgan Mela celebration</span>
-                    </li>
-                    <li className="flex items-start">
-                      <span className="text-primary-600 mr-2">•</span>
-                      <span className="text-neutral-700">Traditional Kashmiri music and dance</span>
-                    </li>
-                    <li className="flex items-start">
-                      <span className="text-primary-600 mr-2">•</span>
-                      <span className="text-neutral-700">Local festivals and religious ceremonies</span>
-                    </li>
-                  </ul>
-                </div>
-                <div>
-                  <h3 className="text-lg font-medium text-neutral-800 mb-2">Arts & Crafts</h3>
-                  <ul className="space-y-2">
-                    <li className="flex items-start">
-                      <span className="text-primary-600 mr-2">•</span>
-                      <span className="text-neutral-700">Intricate woodwork and carving</span>
-                    </li>
-                    <li className="flex items-start">
-                      <span className="text-primary-600 mr-2">•</span>
-                      <span className="text-neutral-700">Traditional carpet weaving</span>
-                    </li>
-                    <li className="flex items-start">
-                      <span className="text-primary-600 mr-2">•</span>
-                      <span className="text-neutral-700">Pashmina shawl crafting</span>
-                    </li>
-                  </ul>
-                </div>
-              </div>
-            </motion.div>
           </div>
+        </div>
+      </section>
+
+      {/* Famous Places Section */}
+      <section className="py-16 bg-gray-50">
+        <div className="container-custom">
+          <motion.div
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
+            transition={{ duration: 0.6 }}
+            className="text-center mb-12"
+          >
+            <h2 className="text-3xl font-serif font-bold text-neutral-900 mb-4">
+              Historical Places of Significance
+            </h2>
+            <p className="text-neutral-600 max-w-2xl mx-auto">
+              Discover the rich heritage and historical significance of Escapeza's most famous landmarks and places
+            </p>
+          </motion.div>
+
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+            {famousPlaces.map((place, index) => (
+              <motion.div
+                key={index}
+                initial={{ opacity: 0, y: 20 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                viewport={{ once: true }}
+                transition={{ duration: 0.5, delay: index * 0.1 }}
+                className="bg-white rounded-xl overflow-hidden shadow-lg"
+              >
+                <div className="h-48 overflow-hidden">
+                  <img
+                    src={place.image}
+                    alt={place.name}
+                    className="w-full h-full object-cover"
+                  />
+                </div>
+                <div className="p-6">
+                  <div className="flex justify-between items-start mb-3">
+                    <h3 className="text-xl font-serif font-bold text-neutral-900">
+                      {place.name}
+                    </h3>
+                    <span className="text-sm text-primary-600 font-medium">
+                      {place.period}
+                    </span>
+                  </div>
+                  <p className="text-neutral-600">
+                    {place.description}
+                  </p>
+                </div>
+              </motion.div>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* Cultural Legacy Section */}
+      <section className="py-16">
+        <div className="container-custom">
+          <motion.div
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
+            transition={{ duration: 0.6 }}
+            className="mt-12 bg-neutral-50 p-6 rounded-lg"
+          >
+            <h2 className="text-2xl font-serif font-bold text-neutral-900 mb-4">
+              Cultural Legacy
+            </h2>
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+              <div>
+                <h3 className="text-lg font-medium text-neutral-800 mb-2">Festivals & Traditions</h3>
+                <ul className="space-y-2">
+                  <li className="flex items-start">
+                    <span className="text-primary-600 mr-2">•</span>
+                    <span className="text-neutral-700">Annual Chowgan Mela celebration</span>
+                  </li>
+                  <li className="flex items-start">
+                    <span className="text-primary-600 mr-2">•</span>
+                    <span className="text-neutral-700">Traditional Kashmiri music and dance</span>
+                  </li>
+                  <li className="flex items-start">
+                    <span className="text-primary-600 mr-2">•</span>
+                    <span className="text-neutral-700">Local festivals and religious ceremonies</span>
+                  </li>
+                </ul>
+              </div>
+              <div>
+                <h3 className="text-lg font-medium text-neutral-800 mb-2">Arts & Crafts</h3>
+                <ul className="space-y-2">
+                  <li className="flex items-start">
+                    <span className="text-primary-600 mr-2">•</span>
+                    <span className="text-neutral-700">Intricate woodwork and carving</span>
+                  </li>
+                  <li className="flex items-start">
+                    <span className="text-primary-600 mr-2">•</span>
+                    <span className="text-neutral-700">Traditional carpet weaving</span>
+                  </li>
+                  <li className="flex items-start">
+                    <span className="text-primary-600 mr-2">•</span>
+                    <span className="text-neutral-700">Pashmina shawl crafting</span>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </motion.div>
         </div>
       </section>
     </>

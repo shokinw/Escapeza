@@ -8,7 +8,7 @@ export default defineConfig({
   optimizeDeps: {
     exclude: ['lucide-react'],
   },
-  base: '/Only-Kishtwar/',
+  base: '/Escapeza/',
   build: {
     outDir: 'dist',
     assetsDir: 'assets',

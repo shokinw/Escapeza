@@ -9,9 +9,9 @@ const Footer: React.FC = () => {
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
           {/* About */}
           <div>
-            <h3 className="text-xl font-display font-bold mb-4">Kishtwar</h3>
+            <h3 className="text-xl font-display font-bold mb-4">Escapeza</h3>
             <p className="text-gray-300 mb-4">
-              Discover the hidden paradise of Kishtwar - stunning landscapes, delicious cuisine, 
+              Discover the hidden paradise of Escapeza - stunning landscapes, delicious cuisine, 
               comfortable stays, and unforgettable experiences.
             </p>
             <div className="flex space-x-4">
